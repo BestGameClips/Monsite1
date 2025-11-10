@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Base</title>
+    <style>
+        /* CSS de base */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue sur ma page de base</h1>
+    </header>
+
+    <main>
+        <p id="message">Clique sur le bouton pour changer ce texte.</p>
+        <button onclick="changerTexte()">Clique-moi !</button>
+    </main>
+
+    <script>
+        // JavaScript simple
+        function changerTexte() {
+            const p = document.getElementById('message');
+            p.textContent = "Le texte a été changé ! 🎉";
+        }
+    </script>
+
+</body>
+</html>
